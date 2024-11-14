@@ -1,10 +1,10 @@
 # Synteny Blocks
 
 ## The Breakpoint Sort
-Implement the algorithm for the breakpoint sort that consists of three functions. First function `FindSorted()` will
+Implement the algorithm for the Breakpoint Sort that consists of three functions. First function `FindSorted()` will
 find an index where the unsorted part of the permutation starts e.i. it will mark the position of the first breakpoint. 
 The second function `IndicateAscending()` will create a vector of the same length as the permutation and mark ascending 
-parts by ones and descending parts by zeros. Finally, the last function `BreakPointSort()` will perform sorting by 
+parts by ones and descending parts by zeros. Finally, the last function `BreakpointSort()` will perform sorting by 
 reversals.
 
 ### Task 1
@@ -14,7 +14,7 @@ reversals.
     * A vector (permutation) of integers e.g. `0 1 2 3 6 7 4 5 8`.
 
 * Output:
-    * A position where the unsorted part starts at e.g. `5`.
+    * An index, at which the unsorted part starts e.g. `5`.
 
 > **Hint**: 
 > Compare successively values of the permutation with an increasing number starting at zero (`0`, `1`, `2` ...) 
@@ -22,7 +22,7 @@ reversals.
 > the tested value or when the tested value is equal to the length of the permutation - 1.
 
 ### Task 2
-* In R, create a function `IndicateAscending()` to mark ascending and descending parts of the permutation.
+* In R, create a function `IndicateAscending()` to mark ascending and descending parts of a permutation.
 
 * Input:
     * A vector (permutation) of integers e.g. `0 4 5 3 2 1 6 7 8`.
@@ -38,7 +38,7 @@ reversals.
 
 
 ### Task 3
-* In R, create a function `BreakPointSort()` to sort a permutation using breakpoints.
+* In R, create a function `BreakpointSort()` to sort a permutation using Breakpoint Sort.
 
 * Input:
     * A vector (permutation) of integers e.g. `5 1 4 3 7 8 9 2 6`.
